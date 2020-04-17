@@ -1,3 +1,3 @@
 # BTC-Check
 
-Program for generating, presenting and updating bitcoin prices via Coindesk API
+SOMETHING THATS MEANT TO MAKE ALERTS AND HAVE A COOL THING THAT UPDATES FROM A WEBSITE OR API OR IDKKKKKKKK
