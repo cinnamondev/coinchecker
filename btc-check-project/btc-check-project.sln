@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "btc-check-project", "btc-check-project.vbproj", "{0AD95DA5-14D4-4D09-9FFD-1E5507D9716B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AD95DA5-14D4-4D09-9FFD-1E5507D9716B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD95DA5-14D4-4D09-9FFD-1E5507D9716B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD95DA5-14D4-4D09-9FFD-1E5507D9716B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD95DA5-14D4-4D09-9FFD-1E5507D9716B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1153DC55-8D83-470C-AA1C-2FE386017700}
+	EndGlobalSection
+EndGlobal
