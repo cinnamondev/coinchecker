@@ -2,6 +2,7 @@ Imports System
 Imports System.Text
 Imports System.IO
 Imports Newtonsoft.Json.Linq
+Imports System.Net.Http
 Imports System.Net
 
 
@@ -21,12 +22,18 @@ Module Program
         Public costUSD As Decimal
     End Class
 
-
+    Const CBURI = "https://api.coindesk.com/v1/bpi/currentprice.json"
     Sub Main(args As String())
         Console.WriteLine("Hello World!")
-        getAvg()
+        'getAvg()
 
-        getLatestBpis()
+        'getLatestBpis()
+        Dim t As Task = New Task(AddressOf DownloadPageAsync)
+        ' Start the task.
+        t.Start()
+        ' Print a message as the page downloads.
+        Console.WriteLine("Downloading page...")
+        'Console.ReadLine()
         Threading.Thread.Sleep(5000)
     End Sub
 
