@@ -11,6 +11,7 @@ Public Class coinchecker
             End Using
         End Using
     End Function
+<<<<<<< HEAD
 
 
     Public Async Function buyPrice(base As String, Optional resultCurrency As String = "USD") As Task(Of String) ' sanitized fetchJSON, still private but will construct uri
@@ -21,16 +22,35 @@ Public Class coinchecker
         Debug.Write(json) 'if we are in debug mode i wanna see what this has to say!
 #End If
 
+=======
+    Public Async Function buyPrice(base As String, Optional resultCurrency As String = config.EndCurrency) As Task(Of String) ' sanitized fetchJSON, still private but will construct uri
+        ' having resultCurrency be optional allows us to use this function for all supported 
+        Dim uri = New Uri($"https://api.coinbase.com/v2/prices/{base}-{config.EndCurrency}/buy") ' build our url based on thing
+
+        Dim json As String = Await FetchJSON(uri.AbsoluteUri) ' pull our json response
+>>>>>>> master
         Dim jsobj As JsonElement = (JsonSerializer.Deserialize(Of Object)(json)).GetProperty("data") ' do the funky System.Text.Json
         Dim amount = jsobj.GetProperty("amount").ToString
 
         Return amount
 
     End Function
+<<<<<<< HEAD
 
 
 
 
 
+=======
+    Public Class btc
+        Private cc As New coinchecker
+
+        Public price = cc.buyPrice("BTC")
+    End Class
+    Public Class eth
+        Public cc As New coinchecker
+        Public price = cc.buyPrice("ETH")
+    End Class
+>>>>>>> master
 
 End Class

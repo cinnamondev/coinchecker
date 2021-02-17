@@ -1,4 +1,5 @@
 ﻿Public Class config
+<<<<<<< HEAD
     Public inCoin As New eth
     Public outCoin As New usd
 
@@ -21,5 +22,8 @@
         Public tSymbol = "ETH"
         Public price = cc.buyPrice("ETH")
     End Class
+=======
+    Public Const EndCurrency As String = "USD"
+>>>>>>> master
 
 End Class
