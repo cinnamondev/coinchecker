@@ -10,4 +10,10 @@
 
         coinprice.Text = $"{config.inCoin.symbol}1 = {config.outCoin.symbol}{Await config.inCoin.price}"
     End Sub
+
+    Private Sub ConfigButton_Click(sender As Object, e As RoutedEventArgs)
+        Dim configWindow As New configWindow
+
+        configWindow.Show()
+    End Sub
 End Class

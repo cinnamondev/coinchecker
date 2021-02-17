@@ -16,11 +16,26 @@
         Loaded="Window_Loaded"
         Title="CoinChecker" Height="450" Width="800">
     <Grid>
+
         <Grid.RowDefinitions>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="56*"/>
-            <RowDefinition Height="33*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="125"/>
         </Grid.RowDefinitions>
+
+        <materialDesign:PopupBox
+                                     PlacementMode="BottomAndAlignCentres"                                                                      
+                                     HorizontalAlignment="Right"
+                                     ToolTip="PopupBox, Style MaterialDesignMultiFloatingActionAccentPopupBox">
+            <StackPanel>
+                <Button x:Name="ConfigButton" Click="ConfigButton_Click">Configuration</Button>
+                <Button IsEnabled="False">About</Button>
+                <Button>Exit</Button>
+            </StackPanel>
+        </materialDesign:PopupBox>
+
+
+
         <Rectangle Fill="Red" Width="200" HorizontalAlignment="Left" Grid.Row="1"/>
         <Rectangle Fill="Green" Width="200" HorizontalAlignment="Center" Grid.Row="1"/>
         <Rectangle Fill="Blue" Width="200" HorizontalAlignment="Right" Grid.Row="1"/>
@@ -31,8 +46,8 @@
                     <RowDefinition Height="65*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock x:Name="coinprice" HorizontalAlignment="Center" TextWrapping="Wrap" Text="COIN = X0.000000" VerticalAlignment="Center" Grid.Row="1" TextAlignment="Center" FontSize="20" AutomationProperties.Name="coinprice"/>
-                <Label x:Name="label_coinprice" Content="Current coin price is..." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="0" FontFamily="Roboto"/>
+                <TextBlock x:Name="coinprice" HorizontalAlignment="Center" TextWrapping="Wrap" Text="COIN = X0.000000" VerticalAlignment="Center" Grid.Row="1" TextAlignment="Center" FontSize="20" AutomationProperties.Name="coinprice" Grid.Column="1" Margin="0,16"/>
+                <Label x:Name="label_coinprice" Content="Current coin price is..." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="0" FontFamily="Roboto" Grid.Column="1" Margin="0,1"/>
 
             </Grid>
         </materialDesign:Card>
