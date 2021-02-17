@@ -13,6 +13,7 @@
         TextOptions.TextRenderingMode="Auto"        
         Background="{DynamicResource MaterialDesignPaper}"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -29,7 +30,7 @@
                     <RowDefinition Height="65*"/>
                 </Grid.RowDefinitions>
 
-                <TextBlock x:Name="coinprice" HorizontalAlignment="Center" TextWrapping="Wrap" Text="COIN = X0.000000" VerticalAlignment="Center" Grid.Row="1" TextAlignment="Center" FontSize="20"/>
+                <TextBlock x:Name="coinprice" HorizontalAlignment="Center" TextWrapping="Wrap" Text="COIN = X0.000000" VerticalAlignment="Center" Grid.Row="1" TextAlignment="Center" FontSize="20" AutomationProperties.Name="coinprice"/>
                 <Label x:Name="label_coinprice" Content="Current coin price is..." HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Grid.Row="0" FontFamily="Roboto"/>
 
             </Grid>
