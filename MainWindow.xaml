@@ -14,16 +14,17 @@
         Background="{DynamicResource MaterialDesignPaper}"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
-        Title="MainWindow" Height="450" Width="800">
+        Title="CoinChecker" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="66*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="56*"/>
             <RowDefinition Height="33*"/>
         </Grid.RowDefinitions>
-        <Rectangle Fill="Red" Width="200" HorizontalAlignment="Left"/>
-        <Rectangle Fill="Green" Width="200" HorizontalAlignment="Center" Grid.Row="0"/>
-        <Rectangle Fill="Blue" Width="200" HorizontalAlignment="Right" Grid.Row="0"/>
-        <materialDesign:Card Padding="0" Margin="16" Grid.Row="1">
+        <Rectangle Fill="Red" Width="200" HorizontalAlignment="Left" Grid.Row="1"/>
+        <Rectangle Fill="Green" Width="200" HorizontalAlignment="Center" Grid.Row="1"/>
+        <Rectangle Fill="Blue" Width="200" HorizontalAlignment="Right" Grid.Row="1"/>
+        <materialDesign:Card Padding="0" Margin="16" Grid.Row="2">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="45*"/>
