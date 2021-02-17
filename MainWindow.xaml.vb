@@ -5,6 +5,7 @@
 
     Private Async Sub Window_Loaded(sender As Object, e As RoutedEventArgs)
         Dim btc As New coinchecker.btc
-        coinprice.Text = Await btc.price
+        coinprice.Text = "1BTC = $"
+        coinprice.Text += Await btc.price
     End Sub
 End Class
