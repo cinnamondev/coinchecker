@@ -11,10 +11,10 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("WpfApp1")>
+<Assembly: AssemblyTitle("btc_check")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("WpfApp1")>
+<Assembly: AssemblyProduct("btc_check")>
 <Assembly: AssemblyCopyright("Copyright ©  2021")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
@@ -42,7 +42,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("f27cd994-50f8-49bc-badd-80d518c4bfdd")>
+<Assembly: Guid("f7587d1d-67f3-4011-b265-b921aee24e90")>
 
 ' Version information for an assembly consists of the following four values:
 '
