@@ -14,8 +14,12 @@ Public Class coinchecker
     Public Async Function buyPrice(base As String, Optional resultCurrency As String = config.EndCurrency) As Task(Of String) ' sanitized fetchJSON, still private but will construct uri
         ' having resultCurrency be optional allows us to use this function for all supported 
         Dim uri = New Uri($"https://api.coinbase.com/v2/prices/{base}-{config.EndCurrency}/buy") ' build our url based on thing
-        Dim json As String = Await FetchJSON(uri.AbsoluteUri)
-        Return json
+
+        Dim json As String = Await FetchJSON(uri.AbsoluteUri) ' pull our json response
+        Dim jsobj As JsonElement = (JsonSerializer.Deserialize(Of Object)(json)).GetProperty("data") ' do the funky System.Text.Json
+        Dim amount = jsobj.GetProperty("amount").ToString
+
+        Return amount
 
     End Function
     Public Class btc
