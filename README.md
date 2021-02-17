@@ -1,9 +1,21 @@
 # BTC-Check
 
-SOMETHING THATS MEANT TO MAKE ALERTS AND HAVE A COOL THING THAT UPDATES FROM A WEBSITE OR API OR IDKKKKKKKK
+WPF Application to check crypto costs, might mess with some other stuff and seperate BTC-Check into a few other things to work with crypto in general ie: basic trade bot(?), wallet management maybe idk
 
+Might also not stick to vb.net bc that seems like itll get painful eventually
 
-im gonna use this to mess with vb.net fight me
 
 [Powered by CoinDesk](https://www.coindesk.com/price/bitcoin)
 
+## Supported currencies
+
+### In Currencies (Crypto)
+
+- Ethereum
+- Bitcoin
+
+### Out Currencies
+
+- USD
+
+Expect both to change in future
