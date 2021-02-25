@@ -6,6 +6,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:btc_check"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        
+        xmlns:DV="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"  
+        xmlns:DVC="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" 
+        
+        
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
@@ -34,11 +39,24 @@
             </StackPanel>
         </materialDesign:PopupBox>
 
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="80*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="Red" Width="200" HorizontalAlignment="Left" Grid.Column="0"/>
+            <DVC:Chart Canvas.Top="80" Canvas.Left="10" Background="Lavender"  Grid.Column="1" Name="priceChart">
+                <DVC:Chart.Series>
+                    <DVC:LineSeries Title="Monthly count" 
+                                    IndependentValueBinding="{Binding Path=Key}"  
+                                    DependentValueBinding="{Binding Path=Value}"/>
+
+                </DVC:Chart.Series>
+            </DVC:Chart>
+
+        </Grid>
 
 
-        <Rectangle Fill="Red" Width="200" HorizontalAlignment="Left" Grid.Row="1"/>
-        <Rectangle Fill="Green" Width="200" HorizontalAlignment="Center" Grid.Row="1"/>
-        <Rectangle Fill="Blue" Width="200" HorizontalAlignment="Right" Grid.Row="1"/>
         <materialDesign:Card Padding="0" Margin="16" Grid.Row="2">
             <Grid>
                 <Grid.RowDefinitions>
