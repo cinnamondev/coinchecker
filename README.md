@@ -1,9 +1,6 @@
-# BTC-Check
+# Coinchecker
 
-WPF Application to check crypto costs, might mess with some other stuff and seperate BTC-Check into a few other things to work with crypto in general ie: basic trade bot(?), wallet management maybe idk
-
-Might also not stick to vb.net bc that seems like itll get painful eventually
-
+Adapted WPF verison to fit for Avalonia .NET 
 
 [Powered by CoinDesk](https://www.coindesk.com/price/bitcoin)
 
@@ -17,5 +14,3 @@ Might also not stick to vb.net bc that seems like itll get painful eventually
 ### Out Currencies
 
 - USD
-
-Expect both to change in future
