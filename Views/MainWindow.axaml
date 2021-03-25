@@ -3,23 +3,15 @@
         xmlns:vm="using:coinchecker.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:styles="clr-namespace:Material.Styles;assembly=Material.Styles"
-        mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="500"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="coinchecker.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="CoinChecker">
+        Title="coinchecker">
 
     <Design.DataContext>
         <vm:MainWindowViewModel/>
     </Design.DataContext>
-    <StackPanel>
-        <Grid RowDefinitions="Auto, Auto">
-            <styles:Card Margin="10 10 10 10 ">
-                <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            </styles:Card>
-            <Button Width="120" HorizontalAlignment="Center" Grid.Row="1">Hello world !</Button>    
-            
-        </Grid>
-    </StackPanel>
+
+    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
 </Window>
