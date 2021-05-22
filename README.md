@@ -2,15 +2,14 @@
 
 Adapted WPF verison to fit for Avalonia .NET 
 
-[Powered by CoinDesk](https://www.coindesk.com/price/bitcoin)
+Supported Coins:
 
-## Supported currencies
-
-### In Currencies (Crypto)
-
+- Monero
 - Ethereum
-- Bitcoin
 
-### Out Currencies
 
-- USD
+
+
+## Future features:
+
+- Coinbase trading / access maybe (ref: [cb-api](https://github.com/cinnamondev/cb-api)
